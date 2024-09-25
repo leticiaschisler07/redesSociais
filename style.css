@@ -1,48 +1,59 @@
+@charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --bg-color: #4c5b5c;
+    --primary-color:#fde74c;
+    --secundary-color:#3891a6;
+    --font:"Josefin sans",sans-serif;
+}
+
 body{
-    font-family: 'Josefin sans', sans-serif;
-}
-:root {
-    --bg-color: #000000;
-    --primary-color: #dddddd;
-    --secundary-color: #f05454;
-    --font: "Handjet", sans-serif;
-}
-body {
     background-color: var(--bg-color);
     color: var(--primary-color);
     font-family: var(--font);
     height: 100vh;
     margin: 0;
 }
-header {
+
+header{
     background-color: var(--primary-color);
     text-align: center;
     padding: 1px;
 }
-h1 {
+
+h1{
     font-size: 2rem;
     color: var(--bg-color);
     font-weight: 700;
 }
-nav {
+
+nav{
     display: flex;
     justify-content: center;
     font-weight: 400;
 }
-nav a:hover {
+
+nav a{
     text-decoration: none;
     color: var(--bg-color);
-    margin: 0rem 2rem 3rem 0rem;
-    font-size: 12rem;
+    margin: 0 2rem 1rem 0rem;
+    font-size: 1.2rem;
 }
-footer {
+
+nav a:hover{
+    text-decoration: underline;
+    transform: scale(0.90);
+    transition: transform 0.1s;
+}
+
+footer{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--primary-color);
-    color: var(--bg-color);
+    color:var(--bg-color);
     width: 100%;
     height: 3rem;
     margin-top: 2rem;
